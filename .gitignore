@@ -1,9 +1,9 @@
 # Composer files
-composer.phar
+#composer.phar
 
 
 # Local configs
-config/autoload/*.local.php
+#config/autoload/*.local.php
 
 # Binary gettext files
 *.mo
