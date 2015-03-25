@@ -29,7 +29,7 @@ class WriteControllerTest extends AbstractHttpControllerTestCase{
 	}
 	
 	
-	public function testAddActionSaveDataFailed(){
+	/*public function testAddActionSaveDataFailed(){
 	
 		$postServiceMock = $this->getMockBuilder('Blog\Services\PostService')
 		->disableOriginalConstructor()
@@ -64,7 +64,7 @@ class WriteControllerTest extends AbstractHttpControllerTestCase{
 		$this->setExpectedException('Exception');
 		
 		
-	}
+	}*/
 	
 	public function testAddActionFormDataWasSaved(){
 		

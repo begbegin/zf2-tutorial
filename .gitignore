@@ -9,11 +9,11 @@
 *.mo
 
 # Data
-data/logs/
-data/cache/
-data/sessions/
-data/tmp/
-temp/
+#data/logs/
+#data/cache/
+#data/sessions/
+#data/tmp/
+3temp/
 
 # Legacy ZF1
 demos/
