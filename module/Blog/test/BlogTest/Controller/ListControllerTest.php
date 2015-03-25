@@ -7,7 +7,7 @@ class ListControllerTest extends AbstractHttpControllerTestCase{
 	
 	public function setup(){
 		$this->setApplicationConfig(
-				include 'D:/xampp/htdocs/zf2-project/config/application.config.php'
+				include __DIR__.'/../../../../../config/application.config.php'
 				);
 		
 		parent::setUp();

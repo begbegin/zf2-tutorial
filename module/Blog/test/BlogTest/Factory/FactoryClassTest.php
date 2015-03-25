@@ -10,7 +10,7 @@ class FactoryClassTest extends AbstractHttpControllerTestCase{
 	
 	public function setUp(){
 		$this->setApplicationConfig(
-				include 'D:/xampp/htdocs/zf2-project/config/application.config.php'
+				include __DIR__.'/../../../../../config/application.config.php'
 		);
 		
 		$this->serviceLocator = $this->getApplicationServiceLocator();

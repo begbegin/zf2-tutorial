@@ -12,7 +12,7 @@ class WriteControllerTest extends AbstractHttpControllerTestCase{
 	protected $controller;
 	public function setUp(){
 		$this->setApplicationConfig(
-				include 'D:/xampp/htdocs/zf2-project/config/application.config.php'
+				include __DIR__.'/../../../../../config/application.config.php'
 				);
 		$this->serviceLocator = $this->getApplicationServiceLocator();
 		$this->controller = $this->serviceLocator->get('ControllerLoader')->get('Blog\Controller\Write');
@@ -29,7 +29,7 @@ class WriteControllerTest extends AbstractHttpControllerTestCase{
 	}
 	
 	
-	/*public function testAddActionSaveDataFailed(){
+	public function testAddActionSaveDataFailed(){
 	
 		$postServiceMock = $this->getMockBuilder('Blog\Services\PostService')
 		->disableOriginalConstructor()
@@ -64,7 +64,7 @@ class WriteControllerTest extends AbstractHttpControllerTestCase{
 		$this->setExpectedException('Exception');
 		
 		
-	}*/
+	}
 	
 	public function testAddActionFormDataWasSaved(){
 		
