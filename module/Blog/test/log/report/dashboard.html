@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for D:\xampp\htdocs\zf2-project\module\Blog\src\Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/nv.d3.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="js/html5shiv.min.js"></script>
+  <script src="js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="index.html">D:\xampp\htdocs\zf2-project\module\Blog\src\Blog</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Factory/PrintControllerFactory.php.html#7">PrintControllerFactory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/PostInputFilter.php.html#7">PostInputFilter</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/EnfantService.php.html#5">EnfantService</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/EnfantController.php.html#5">EnfantController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/EnfantServiceFactory.php.html#7">EnfantServiceFactory</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/PrintController.php.html#9">PrintController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#11">Enfant</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PostRepository.php.html#7">PostRepository</a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Form/PostForm.php.html#9">PostForm</a></td><td class="text-right">82%</td></tr>
+       <tr><td><a href="Services/PostService.php.html#8">PostService</a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="Entity/Post.php.html#14">Post</a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="Controller/WriteController.php.html#14">WriteController</a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/PrintController.php.html#9">PrintController</a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="Controller/WriteController.php.html#14">WriteController</a></td><td class="text-right">14</td></tr>
+       <tr><td><a href="Services/PostService.php.html#8">PostService</a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Repository/PostRepository.php.html#7">PostRepository</a></td><td class="text-right">4</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Entity/Enfant.php.html#146"><abbr title="Enfant::setSchoolLevel">setSchoolLevel</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#150"><abbr title="Enfant::getFamilyConstraints">getFamilyConstraints</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#153"><abbr title="Enfant::setFamilyConstraints">setFamilyConstraints</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Post.php.html#72"><abbr title="Post::setImage">setImage</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#143"><abbr title="Enfant::getSchoolLevel">getSchoolLevel</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#139"><abbr title="Enfant::setSchoolName">setSchoolName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/EnfantController.php.html#8"><abbr title="EnfantController::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#132"><abbr title="Enfant::setRef">setRef</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#136"><abbr title="Enfant::getSchoolName">getSchoolName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/EnfantServiceFactory.php.html#12"><abbr title="EnfantServiceFactory::createService">createService</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Factory/PrintControllerFactory.php.html#11"><abbr title="PrintControllerFactory::createService">createService</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/PostInputFilter.php.html#54"><abbr title="PostInputFilter::getInputFilterSpecification">getInputFilterSpecification</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/EnfantService.php.html#7"><abbr title="EnfantService::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/EnfantService.php.html#12"><abbr title="EnfantService::findAllEnfants">findAllEnfants</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/EnfantService.php.html#16"><abbr title="EnfantService::findById">findById</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/PostInputFilter.php.html#9"><abbr title="PostInputFilter::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/PostForm.php.html#51"><abbr title="PostForm::getObjectManager">getObjectManager</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/PostFieldset.php.html#99"><abbr title="PostFieldset::setObjectManager">setObjectManager</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/PostFieldset.php.html#104"><abbr title="PostFieldset::getObjectManager">getObjectManager</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/PostForm.php.html#46"><abbr title="PostForm::setObjectManager">setObjectManager</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#125"><abbr title="Enfant::setCountry">setCountry</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#129"><abbr title="Enfant::getRef">getRef</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#80"><abbr title="Enfant::getId">getId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#122"><abbr title="Enfant::getCountry">getCountry</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#87"><abbr title="Enfant::getFirstName">getFirstName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/PrintController.php.html#205"><abbr title="PrintController::getEndingNotes">getEndingNotes</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/PrintController.php.html#184"><abbr title="PrintController::write">write</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/PrintController.php.html#13"><abbr title="PrintController::__construct">__construct</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/PrintController.php.html#17"><abbr title="PrintController::enfantAction">enfantAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/PrintController.php.html#97"><abbr title="PrintController::printToWordAction">printToWordAction</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#90"><abbr title="Enfant::setFirstName">setFirstName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#83"><abbr title="Enfant::setId">setId</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#94"><abbr title="Enfant::getName">getName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#111"><abbr title="Enfant::setPhoto">setPhoto</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#115"><abbr title="Enfant::getNaissance">getNaissance</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#118"><abbr title="Enfant::setNaissance">setNaissance</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#104"><abbr title="Enfant::setSchoolYear">setSchoolYear</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#108"><abbr title="Enfant::getPhoto">getPhoto</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#97"><abbr title="Enfant::setName">setName</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Enfant.php.html#101"><abbr title="Enfant::getSchoolYear">getSchoolYear</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Services/PostService.php.html#33"><abbr title="PostService::deletePost">deletePost</a></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Services/PostService.php.html#24"><abbr title="PostService::savePost">savePost</a></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Controller/WriteController.php.html#24"><abbr title="WriteController::addAction">addAction</a></a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="Repository/PostRepository.php.html#9"><abbr title="PostRepository::save">save</a></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Repository/PostRepository.php.html#20"><abbr title="PostRepository::delete">delete</a></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Controller/WriteController.php.html#50"><abbr title="WriteController::editAction">editAction</a></a></td><td class="text-right">86%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/PrintController.php.html#205"><abbr title="PrintController::getEndingNotes">getEndingNotes</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Controller/PrintController.php.html#184"><abbr title="PrintController::write">write</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/PrintController.php.html#17"><abbr title="PrintController::enfantAction">enfantAction</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/WriteController.php.html#50"><abbr title="WriteController::editAction">editAction</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Controller/WriteController.php.html#24"><abbr title="WriteController::addAction">addAction</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Services/PostService.php.html#33"><abbr title="PostService::deletePost">deletePost</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Services/PostService.php.html#24"><abbr title="PostService::savePost">savePost</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Repository/PostRepository.php.html#20"><abbr title="PostRepository::delete">delete</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Repository/PostRepository.php.html#9"><abbr title="PostRepository::save">save</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="http://github.com/sebastianbergmann/php-code-coverage" target="_top">PHP_CodeCoverage 2.0.15</a> using <a href="http://php.net/" target="_top">PHP 5.5.19</a> and <a href="http://phpunit.de/">PHPUnit 4.5.0</a> at Thu Mar 19 6:34:10 ACT 2015.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="js/holder.js" type="text/javascript"></script>
+  <script src="js/d3.min.js" type="text/javascript"></script>
+  <script src="js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([7,0,0,0,0,0,0,0,0,5,1,7], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([40,0,0,0,0,0,0,0,3,3,0,22], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[100,0,"<a href=\"BlogUtils.php.html#4\">BlogUtils<\/a>"],[0,1,"<a href=\"Controller\/EnfantController.php.html#5\">EnfantController<\/a>"],[100,4,"<a href=\"Controller\/ListController.php.html#9\">ListController<\/a>"],[0,14,"<a href=\"Controller\/PrintController.php.html#9\">PrintController<\/a>"],[88.372093023256,14,"<a href=\"Controller\/WriteController.php.html#14\">WriteController<\/a>"],[0,22,"<a href=\"Entity\/Enfant.php.html#11\">Enfant<\/a>"],[83.333333333333,8,"<a href=\"Entity\/Post.php.html#14\">Post<\/a>"],[0,1,"<a href=\"Factory\/EnfantServiceFactory.php.html#7\">EnfantServiceFactory<\/a>"],[100,1,"<a href=\"Factory\/ListControllerFactory.php.html#7\">ListControllerFactory<\/a>"],[100,1,"<a href=\"Factory\/PostFormFactory.php.html#8\">PostFormFactory<\/a>"],[100,1,"<a href=\"Factory\/PostServiceFactory.php.html#7\">PostServiceFactory<\/a>"],[0,1,"<a href=\"Factory\/PrintControllerFactory.php.html#7\">PrintControllerFactory<\/a>"],[100,1,"<a href=\"Factory\/WriteControllerFactory.php.html#8\">WriteControllerFactory<\/a>"],[93.333333333333,4,"<a href=\"Form\/PostFieldset.php.html#8\">PostFieldset<\/a>"],[82.352941176471,3,"<a href=\"Form\/PostForm.php.html#9\">PostForm<\/a>"],[0,2,"<a href=\"Form\/PostInputFilter.php.html#7\">PostInputFilter<\/a>"],[100,0,"<a href=\"Repository\/EnfantRepository.php.html#6\">EnfantRepository<\/a>"],[80,4,"<a href=\"Repository\/PostRepository.php.html#7\">PostRepository<\/a>"],[0,3,"<a href=\"Services\/EnfantService.php.html#5\">EnfantService<\/a>"],[83.333333333333,7,"<a href=\"Services\/PostService.php.html#8\">PostService<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.scatter.onlyCircles(false);
+    chart.tooltipContent(function(key, y, e, graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Controller\/EnfantController.php.html#8\">EnfantController::__construct<\/a>"],[100,1,"<a href=\"Controller\/ListController.php.html#13\">ListController::__construct<\/a>"],[100,1,"<a href=\"Controller\/ListController.php.html#18\">ListController::indexAction<\/a>"],[100,2,"<a href=\"Controller\/ListController.php.html#25\">ListController::detailAction<\/a>"],[0,1,"<a href=\"Controller\/PrintController.php.html#13\">PrintController::__construct<\/a>"],[0,2,"<a href=\"Controller\/PrintController.php.html#17\">PrintController::enfantAction<\/a>"],[0,1,"<a href=\"Controller\/PrintController.php.html#97\">PrintController::printToWordAction<\/a>"],[0,3,"<a href=\"Controller\/PrintController.php.html#184\">PrintController::write<\/a>"],[0,7,"<a href=\"Controller\/PrintController.php.html#205\">PrintController::getEndingNotes<\/a>"],[100,1,"<a href=\"Controller\/WriteController.php.html#19\">WriteController::__construct<\/a>"],[78.571428571429,4,"<a href=\"Controller\/WriteController.php.html#24\">WriteController::addAction<\/a>"],[86.666666666667,5,"<a href=\"Controller\/WriteController.php.html#50\">WriteController::editAction<\/a>"],[100,4,"<a href=\"Controller\/WriteController.php.html#78\">WriteController::deleteAction<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#80\">Enfant::getId<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#83\">Enfant::setId<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#87\">Enfant::getFirstName<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#90\">Enfant::setFirstName<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#94\">Enfant::getName<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#97\">Enfant::setName<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#101\">Enfant::getSchoolYear<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#104\">Enfant::setSchoolYear<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#108\">Enfant::getPhoto<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#111\">Enfant::setPhoto<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#115\">Enfant::getNaissance<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#118\">Enfant::setNaissance<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#122\">Enfant::getCountry<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#125\">Enfant::setCountry<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#129\">Enfant::getRef<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#132\">Enfant::setRef<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#136\">Enfant::getSchoolName<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#139\">Enfant::setSchoolName<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#143\">Enfant::getSchoolLevel<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#146\">Enfant::setSchoolLevel<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#150\">Enfant::getFamilyConstraints<\/a>"],[0,1,"<a href=\"Entity\/Enfant.php.html#153\">Enfant::setFamilyConstraints<\/a>"],[100,1,"<a href=\"Entity\/Post.php.html#43\">Post::getId<\/a>"],[100,1,"<a href=\"Entity\/Post.php.html#47\">Post::setId<\/a>"],[100,1,"<a href=\"Entity\/Post.php.html#52\">Post::getTitle<\/a>"],[100,1,"<a href=\"Entity\/Post.php.html#56\">Post::setTitle<\/a>"],[100,1,"<a href=\"Entity\/Post.php.html#61\">Post::getText<\/a>"],[100,1,"<a href=\"Entity\/Post.php.html#65\">Post::setText<\/a>"],[100,1,"<a href=\"Entity\/Post.php.html#69\">Post::getImage<\/a>"],[0,1,"<a href=\"Entity\/Post.php.html#72\">Post::setImage<\/a>"],[0,1,"<a href=\"Factory\/EnfantServiceFactory.php.html#12\">EnfantServiceFactory::createService<\/a>"],[100,1,"<a href=\"Factory\/ListControllerFactory.php.html#10\">ListControllerFactory::createService<\/a>"],[100,1,"<a href=\"Factory\/PostFormFactory.php.html#10\">PostFormFactory::createService<\/a>"],[100,1,"<a href=\"Factory\/PostServiceFactory.php.html#9\">PostServiceFactory::createService<\/a>"],[0,1,"<a href=\"Factory\/PrintControllerFactory.php.html#11\">PrintControllerFactory::createService<\/a>"],[100,1,"<a href=\"Factory\/WriteControllerFactory.php.html#10\">WriteControllerFactory::createService<\/a>"],[100,1,"<a href=\"Form\/PostFieldset.php.html#12\">PostFieldset::__construct<\/a>"],[100,1,"<a href=\"Form\/PostFieldset.php.html#56\">PostFieldset::getInputFilterSpecification<\/a>"],[0,1,"<a href=\"Form\/PostFieldset.php.html#99\">PostFieldset::setObjectManager<\/a>"],[0,1,"<a href=\"Form\/PostFieldset.php.html#104\">PostFieldset::getObjectManager<\/a>"],[100,1,"<a href=\"Form\/PostForm.php.html#14\">PostForm::__construct<\/a>"],[0,1,"<a href=\"Form\/PostForm.php.html#46\">PostForm::setObjectManager<\/a>"],[0,1,"<a href=\"Form\/PostForm.php.html#51\">PostForm::getObjectManager<\/a>"],[0,1,"<a href=\"Form\/PostInputFilter.php.html#9\">PostInputFilter::__construct<\/a>"],[0,1,"<a href=\"Form\/PostInputFilter.php.html#54\">PostInputFilter::getInputFilterSpecification<\/a>"],[80,2,"<a href=\"Repository\/PostRepository.php.html#9\">PostRepository::save<\/a>"],[80,2,"<a href=\"Repository\/PostRepository.php.html#20\">PostRepository::delete<\/a>"],[0,1,"<a href=\"Services\/EnfantService.php.html#7\">EnfantService::__construct<\/a>"],[0,1,"<a href=\"Services\/EnfantService.php.html#12\">EnfantService::findAllEnfants<\/a>"],[0,1,"<a href=\"Services\/EnfantService.php.html#16\">EnfantService::findById<\/a>"],[100,1,"<a href=\"Services\/PostService.php.html#12\">PostService::__construct<\/a>"],[100,1,"<a href=\"Services\/PostService.php.html#16\">PostService::findAllPost<\/a>"],[100,1,"<a href=\"Services\/PostService.php.html#20\">PostService::findPost<\/a>"],[75,2,"<a href=\"Services\/PostService.php.html#24\">PostService::savePost<\/a>"],[75,2,"<a href=\"Services\/PostService.php.html#33\">PostService::deletePost<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

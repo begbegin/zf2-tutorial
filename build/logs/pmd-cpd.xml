@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd-cpd>
+  <duplication lines="66" tokens="137">
+    <file path="D:\xampp\htdocs\zf2-project\module\Album\test\Bootstrap.php" line="42"/>
+    <file path="D:\xampp\htdocs\zf2-project\module\Blog\test\Bootstrap.php" line="42"/>
+    <codefragment>        $serviceManager = new ServiceManager(new ServiceManagerConfig());&#13;
+        $serviceManager-&gt;setService('ApplicationConfig', $config);&#13;
+        $serviceManager-&gt;get('ModuleManager')-&gt;loadModules();&#13;
+        static::$serviceManager = $serviceManager;&#13;
+    }&#13;
+&#13;
+    public static function chroot()&#13;
+    {&#13;
+        $rootPath = dirname(static::findParentPath('module'));&#13;
+        chdir($rootPath);&#13;
+    }&#13;
+&#13;
+    public static function getServiceManager()&#13;
+    {&#13;
+        return static::$serviceManager;&#13;
+    }&#13;
+&#13;
+    protected static function initAutoloader()&#13;
+    {&#13;
+        $vendorPath = static::findParentPath('vendor');&#13;
+&#13;
+        $zf2Path = getenv('ZF2_PATH');&#13;
+        if (!$zf2Path) {&#13;
+            if (defined('ZF2_PATH')) {&#13;
+                $zf2Path = ZF2_PATH;&#13;
+            } elseif (is_dir($vendorPath . '/ZF2/library')) {&#13;
+                $zf2Path = $vendorPath . '/ZF2/library';&#13;
+            } elseif (is_dir($vendorPath . '/zendframework/zendframework/library')) {&#13;
+                $zf2Path = $vendorPath . '/zendframework/zendframework/library';&#13;
+            }&#13;
+        }&#13;
+&#13;
+        if (!$zf2Path) {&#13;
+            throw new RuntimeException(&#13;
+                    'Unable to load ZF2. Run `php composer.phar install` or'&#13;
+                    . ' define a ZF2_PATH environment variable.'&#13;
+            );&#13;
+        }&#13;
+&#13;
+        if (file_exists($vendorPath . '/autoload.php')) {&#13;
+            include $vendorPath . '/autoload.php';&#13;
+        }&#13;
+&#13;
+        include $zf2Path . '/Zend/Loader/AutoloaderFactory.php';&#13;
+        AutoloaderFactory::factory(array(&#13;
+                'Zend\Loader\StandardAutoloader' =&gt; array(&#13;
+                        'autoregister_zf' =&gt; true,&#13;
+                        'namespaces' =&gt; array(&#13;
+                                __NAMESPACE__ =&gt; __DIR__ . '/' . __NAMESPACE__,&#13;
+                        ),&#13;
+                ),&#13;
+        ));&#13;
+    }&#13;
+&#13;
+    protected static function findParentPath($path)&#13;
+    {&#13;
+        $dir = __DIR__;&#13;
+        $previousDir = '.';&#13;
+        while (!is_dir($dir . '/' . $path)) {&#13;
+            $dir = dirname($dir);&#13;
+            if ($previousDir === $dir) {&#13;
+                return false;&#13;
+            }&#13;
+            $previousDir = $dir;&#13;
+        }&#13;
+        return $dir . '/' . $path;&#13;
+</codefragment>
+  </duplication>
+</pmd-cpd>
