@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
   <meta charset="UTF-8">
-  <title>Dashboard for D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module/Blog/src/Blog/Entity</title>
+  <title>Dashboard for D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module/Blog/src/Blog/Controller</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../../../../css/bootstrap.min.css" rel="stylesheet">
   <link href="../../../../css/nv.d3.css" rel="stylesheet">
@@ -22,7 +22,7 @@
         <li><a href="../../../index.html">Blog</a></li>
         <li><a href="../../index.html">src</a></li>
         <li><a href="../index.html">Blog</a></li>
-        <li><a href="index.html">Entity</a></li>
+        <li><a href="index.html">Controller</a></li>
         <li class="active">(Dashboard)</li>
 
       </ol>
@@ -62,7 +62,7 @@
         </tr>
        </thead>
        <tbody>
-       <tr><td><a href="Post.php.html#14">Post</a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="WriteController.php.html#14">WriteController</a></td><td class="text-right">88%</td></tr>
 
        </tbody>
       </table>
@@ -79,6 +79,7 @@
         </tr>
        </thead>
        <tbody>
+       <tr><td><a href="WriteController.php.html#14">WriteController</a></td><td class="text-right">14</td></tr>
 
        </tbody>
       </table>
@@ -116,7 +117,8 @@
         </tr>
        </thead>
        <tbody>
-       <tr><td><a href="Post.php.html#72"><abbr title="Post::setImage">setImage</a></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="WriteController.php.html#50"><abbr title="WriteController::editAction">editAction</a></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="WriteController.php.html#24"><abbr title="WriteController::addAction">addAction</a></a></td><td class="text-right">85%</td></tr>
 
        </tbody>
       </table>
@@ -133,6 +135,8 @@
         </tr>
        </thead>
        <tbody>
+       <tr><td><a href="WriteController.php.html#50"><abbr title="WriteController::editAction">editAction</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="WriteController.php.html#24"><abbr title="WriteController::addAction">addAction</abbr></a></td><td class="text-right">4</td></tr>
 
        </tbody>
       </table>
@@ -163,7 +167,7 @@ $(document).ready(function() {
       .yAxis.tickFormat(d3.format('d'));
 
     d3.select('#classCoverageDistribution svg')
-      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,1,0,0], "Class Coverage"))
+      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,1,0,1], "Class Coverage"))
       .transition().duration(500).call(chart);
 
     nv.utils.windowResize(chart.update);
@@ -181,7 +185,7 @@ $(document).ready(function() {
       .yAxis.tickFormat(d3.format('d'));
 
     d3.select('#methodCoverageDistribution svg')
-      .datum(getCoverageDistributionData([1,0,0,0,0,0,0,0,0,0,0,7], "Method Coverage"))
+      .datum(getCoverageDistributionData([0,0,0,0,0,0,0,0,0,2,0,5], "Method Coverage"))
       .transition().duration(500).call(chart);
 
     nv.utils.windowResize(chart.update);
@@ -232,7 +236,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Cyclomatic Complexity');
 
     d3.select('#classComplexity svg')
-      .datum(getComplexityData([[83.333333333333,8,"<a href=\"Post.php.html#14\">Post<\/a>"]], 'Class Complexity'))
+      .datum(getComplexityData([[100,4,"<a href=\"ListController.php.html#9\">ListController<\/a>"],[88.372093023256,14,"<a href=\"WriteController.php.html#14\">WriteController<\/a>"]], 'Class Complexity'))
       .transition()
       .duration(500)
       .call(chart);
@@ -257,7 +261,7 @@ $(document).ready(function() {
     chart.yAxis.axisLabel('Method Complexity');
 
     d3.select('#methodComplexity svg')
-      .datum(getComplexityData([[100,1,"<a href=\"Post.php.html#43\">Post::getId<\/a>"],[100,1,"<a href=\"Post.php.html#47\">Post::setId<\/a>"],[100,1,"<a href=\"Post.php.html#52\">Post::getTitle<\/a>"],[100,1,"<a href=\"Post.php.html#56\">Post::setTitle<\/a>"],[100,1,"<a href=\"Post.php.html#61\">Post::getText<\/a>"],[100,1,"<a href=\"Post.php.html#65\">Post::setText<\/a>"],[100,1,"<a href=\"Post.php.html#69\">Post::getImage<\/a>"],[0,1,"<a href=\"Post.php.html#72\">Post::setImage<\/a>"]], 'Method Complexity'))
+      .datum(getComplexityData([[100,1,"<a href=\"ListController.php.html#13\">ListController::__construct<\/a>"],[100,1,"<a href=\"ListController.php.html#18\">ListController::indexAction<\/a>"],[100,2,"<a href=\"ListController.php.html#25\">ListController::detailAction<\/a>"],[100,1,"<a href=\"WriteController.php.html#19\">WriteController::__construct<\/a>"],[85.714285714286,4,"<a href=\"WriteController.php.html#24\">WriteController::addAction<\/a>"],[80,5,"<a href=\"WriteController.php.html#50\">WriteController::editAction<\/a>"],[100,4,"<a href=\"WriteController.php.html#78\">WriteController::deleteAction<\/a>"]], 'Method Complexity'))
       .transition()
       .duration(500)
       .call(chart);

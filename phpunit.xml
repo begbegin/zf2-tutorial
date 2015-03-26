@@ -1,0 +1,35 @@
+
+<phpunit bootstrap="./tests/bootstrap.php" colors="true"   stopOnFailure="false">
+    <testsuites>
+    	<!-- Album module -->
+        <testsuite name="album-zf2tutorial">
+        	<directory>./module/Album/test/AlbumTest</directory>
+        	
+        </testsuite>
+        
+        <!-- Blog module -->
+        <testsuite name="blog-zf2tutorial">
+        	<directory>./module/Blog/test/BlogTest/Entity</directory>
+            <directory>./module/Blog/test/BlogTest/Form</directory>
+            <directory>./module/Blog/test/BlogTest/Factory</directory>
+            <directory>./module/Blog/test/BlogTest/Services</directory>
+            <directory>./module/Blog/test/BlogTest/Controller</directory>
+        </testsuite>
+
+    </testsuites>
+    
+    <filter>  
+        <whitelist addUncoveredFilesFromWhitelist="false" processUncoveredFilesFromWhitelist="true">  
+        	<directory suffix='.php'>./module/Album/src/</directory>
+            <directory suffix='.php'>./module/Blog/src/</directory>  
+        </whitelist>  
+         
+    </filter>
+   <logging>
+	 <log type="coverage-html" target="build/coverage"/>
+	 <log type="coverage-clover" target="build/logs/clover.xml"/>
+	 <log type="coverage-crap4j" target="build/logs/crap4j.xml"/>
+	 <log type="junit" target="build/logs/junit.xml" logIncompleteSkipped="false"/>
+	</logging>
+   	
+</phpunit>

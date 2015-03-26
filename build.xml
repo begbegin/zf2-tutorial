@@ -151,12 +151,12 @@
   <exec executable="php" failonerror="true">
   <arg line="${basedir}/build/tools/phpunit.phar" />
    <arg value="--configuration"/>
-   <arg path="${basedir}/build/phpunit.xml"/>
+   <arg path="${basedir}/phpunit.xml"/>
   </exec>
  </target>
 
  <target name="phpdox" depends="phploc-ci,phpcs-ci,phpmd-ci" description="Generate project documentation using phpDox">
-  <exec executable="php" dir="${basedir}/build">
+  <exec executable="php" dir="${basedir}">
 	<arg line="${basedir}/build/tools/phpdox.phar" />
   </exec>
  </target>

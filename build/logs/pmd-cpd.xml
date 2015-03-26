@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pmd-cpd>
   <duplication lines="66" tokens="137">
-    <file path="D:\xampp\htdocs\zf2-project\module\Album\test\Bootstrap.php" line="42"/>
-    <file path="D:\xampp\htdocs\zf2-project\module\Blog\test\Bootstrap.php" line="42"/>
+    <file path="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Album\test\Bootstrap.php" line="42"/>
+    <file path="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\Bootstrap.php" line="42"/>
     <codefragment>        $serviceManager = new ServiceManager(new ServiceManagerConfig());&#13;
         $serviceManager-&gt;setService('ApplicationConfig', $config);&#13;
         $serviceManager-&gt;get('ModuleManager')-&gt;loadModules();&#13;
