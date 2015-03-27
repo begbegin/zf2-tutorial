@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="25" assertions="91" failures="0" errors="0" time="13.249756">
+    <testsuite name="album-zf2tutorial" tests="2" assertions="9" failures="0" errors="0" time="0.635036">
+      <testsuite name="AlbumTest\Controller\AlbumControllerTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Album\test\AlbumTest\Controller\AlbumControllerTest.php" tests="2" assertions="9" failures="0" errors="0" time="0.635036">
+        <testcase name="testIndexActionCanBeAccessed" class="AlbumTest\Controller\AlbumControllerTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Album\test\AlbumTest\Controller\AlbumControllerTest.php" line="20" assertions="6" time="0.322018"/>
+        <testcase name="testAddActionRedirectsAfterValidPost" class="AlbumTest\Controller\AlbumControllerTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Album\test\AlbumTest\Controller\AlbumControllerTest.php" line="45" assertions="3" time="0.313018"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="blog-zf2tutorial" tests="23" assertions="82" failures="0" errors="0" time="12.614720">
+      <testsuite name="BlogTest\Entity\PostTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Entity\PostTest.php" tests="1" assertions="4" failures="0" errors="0" time="0.005000">
+        <testcase name="testPostInitialStateShouldbeNull" class="BlogTest\Entity\PostTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Entity\PostTest.php" line="7" assertions="4" time="0.005000"/>
+      </testsuite>
+      <testsuite name="BlogTest\Form\PostFormTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Form\PostFormTest.php" tests="3" assertions="15" failures="0" errors="0" time="1.264072">
+        <testcase name="testFormElementsAreSetCorrectly" class="BlogTest\Form\PostFormTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Form\PostFormTest.php" line="23" assertions="10" time="0.437025"/>
+        <testcase name="testInputFilterIsSetCorrectly" class="BlogTest\Form\PostFormTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Form\PostFormTest.php" line="44" assertions="3" time="0.348020"/>
+        <testcase name="testFormValidation" class="BlogTest\Form\PostFormTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Form\PostFormTest.php" line="55" assertions="2" time="0.479027"/>
+      </testsuite>
+      <testsuite name="BlogTest\Factory\FactoryClassTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Factory\FactoryClassTest.php" tests="3" assertions="7" failures="0" errors="0" time="1.135064">
+        <testcase name="testPostServiceIsCreated" class="BlogTest\Factory\FactoryClassTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Factory\FactoryClassTest.php" line="23" assertions="2" time="0.380021"/>
+        <testcase name="testPostFormIsCreated" class="BlogTest\Factory\FactoryClassTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Factory\FactoryClassTest.php" line="29" assertions="3" time="0.337019"/>
+        <testcase name="testWriteControllerIsCreated" class="BlogTest\Factory\FactoryClassTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Factory\FactoryClassTest.php" line="37" assertions="2" time="0.418024"/>
+      </testsuite>
+      <testsuite name="BlogTest\Services\PostServiceTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Services\PostServiceTest.php" tests="4" assertions="10" failures="0" errors="0" time="1.812105">
+        <testcase name="testSavePost" class="BlogTest\Services\PostServiceTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Services\PostServiceTest.php" line="23" assertions="3" time="0.442026"/>
+        <testcase name="testFindAllPost" class="BlogTest\Services\PostServiceTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Services\PostServiceTest.php" line="44" assertions="3" time="0.485028"/>
+        <testcase name="testFindPost" class="BlogTest\Services\PostServiceTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Services\PostServiceTest.php" line="57" assertions="3" time="0.426024"/>
+        <testcase name="testDeletePost" class="BlogTest\Services\PostServiceTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Services\PostServiceTest.php" line="71" assertions="1" time="0.459027"/>
+      </testsuite>
+      <testsuite name="BlogTest\Controller\ListControllerTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Controller\ListControllerTest.php" tests="3" assertions="12" failures="0" errors="0" time="1.190069">
+        <testcase name="testIndexActionIsAccessible" class="BlogTest\Controller\ListControllerTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Controller\ListControllerTest.php" line="16" assertions="6" time="0.430025"/>
+        <testcase name="testDetailActionRedirectAfterPostNotFound" class="BlogTest\Controller\ListControllerTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Controller\ListControllerTest.php" line="29" assertions="3" time="0.347020"/>
+        <testcase name="testDetailActionIsAccessible" class="BlogTest\Controller\ListControllerTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Controller\ListControllerTest.php" line="37" assertions="3" time="0.413024"/>
+      </testsuite>
+      <testsuite name="BlogTest\Controller\WriteControllerTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Controller\WriteControllerTest.php" tests="9" assertions="34" failures="0" errors="0" time="7.208410">
+        <testcase name="testAddActionFormIsDisplayed" class="BlogTest\Controller\WriteControllerTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Controller\WriteControllerTest.php" line="22" assertions="4" time="0.825047"/>
+        <testcase name="testAddActionFormDataWasSaved" class="BlogTest\Controller\WriteControllerTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Controller\WriteControllerTest.php" line="69" assertions="4" time="0.760043"/>
+        <testcase name="testEditActionRedirectWithInavaliPostId" class="BlogTest\Controller\WriteControllerTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Controller\WriteControllerTest.php" line="100" assertions="2" time="0.781045"/>
+        <testcase name="testEditActionFormIsDisplayedWithData" class="BlogTest\Controller\WriteControllerTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Controller\WriteControllerTest.php" line="108" assertions="5" time="0.913052"/>
+        <testcase name="testEditActionFormDataWasUpdate" class="BlogTest\Controller\WriteControllerTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Controller\WriteControllerTest.php" line="129" assertions="4" time="0.910052"/>
+        <testcase name="testDeleteActionRedirectWithInavaliPostId" class="BlogTest\Controller\WriteControllerTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Controller\WriteControllerTest.php" line="165" assertions="2" time="0.897051"/>
+        <testcase name="testDeleteActionConfirmationFormIsDisplayed" class="BlogTest\Controller\WriteControllerTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Controller\WriteControllerTest.php" line="173" assertions="5" time="0.732041"/>
+        <testcase name="testDeleteActionPostDeleted" class="BlogTest\Controller\WriteControllerTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Controller\WriteControllerTest.php" line="195" assertions="4" time="0.685039"/>
+        <testcase name="testDeleteActionPostDeletingCanceled" class="BlogTest\Controller\WriteControllerTest" file="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module\Blog\test\BlogTest\Controller\WriteControllerTest.php" line="224" assertions="4" time="0.705041"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
