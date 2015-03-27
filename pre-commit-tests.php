@@ -6,8 +6,10 @@ class PreCommitTest{
 		$this->testsFor("Album");
 		$this->testsFor("Blog");
 
-		/* For all Modules testing */
-		$this->testsFor(self::ALL_MODULE);
+		/*  For all Modules testing 
+		*	Put this in the comments if you want to test module by module
+		*/
+		//$this->testsFor(self::ALL_MODULE);
 	}
 	
 	public function testsFor($module){
@@ -19,7 +21,7 @@ class PreCommitTest{
 		if(self::ALL_MODULE == $module){
 			exec($phpunit, $output, $returnCode); 
 		}else{
-			exec($phpunit.' -c ./module/'.$module.'/test/phpunit.xml', $output, $returnCode); 
+			exec('phpunit -c ./module/'.$module.'/test/phpunit.xml', $output, $returnCode); 
 		}
 		
 		echo implode(PHP_EOL, $output).PHP_EOL;

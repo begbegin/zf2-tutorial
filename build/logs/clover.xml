@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1427466533">
-  <project timestamp="1427466533">
+<coverage generated="1427466839">
+  <project timestamp="1427466839">
     <package name="Album\Controller">
       <file name="D:\Dev\New\code\PHP\zf2-tutorial\zf2-tutorial\module/Album/src/Album/Controller/AlbumController.php">
         <class name="AlbumController" namespace="Album\Controller">
