@@ -34,7 +34,7 @@ class AlbumControllerTest extends AbstractHttpControllerTestCase
 		$serviceManager->setService('Album\Model\AlbumTable', $albumTableMock);
 		
 		$this->dispatch('/album');
-		$this->assertResponseStatusCode(200);
+		$this->assertResponseStatusCode(201);
 	
 		$this->assertModuleName('Album');
 		$this->assertControllerName('Album\Controller\Album');
