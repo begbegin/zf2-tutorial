@@ -9,11 +9,11 @@ $projectName = basename(getcwd());
 
 // execute unit tests (it is assumed that a phpunit.xml configuration is present 
 // in the root of the project)
-exec('phpunit', $output, $returnCode); // cwd is assumed here
-
+exec('D:\Users\w.begbessou\AppData\Roaming\Composer\vendor\bin\phpunit', $output, $returnCode); // cwd is assumed here
+if ($returnCode != 0) { echo implode(PHP_EOL, $output); }
+die($returnCode);
 // if the build failed, output a summary and fail
 if ($returnCode !== 0) {
-
     // find the line with the summary; this might not be the last
     while (($minimalTestSummary = array_pop($output)) !== null) {
         if (strpos($minimalTestSummary, 'Tests:') !== false) {
