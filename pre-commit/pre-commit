@@ -1,0 +1,4 @@
+#!/bin/sh
+#php="D:\xampp\php\php.exe"
+
+php -f "./pre-commit/pre-commit-tests.php"
